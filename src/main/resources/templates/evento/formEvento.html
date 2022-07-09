@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro evento</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Cadastro de Eventos</h1>
+        </div>
+        <div>
+            <a href="/">Pagina principal</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <form action="/cadastrarEvento" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" value="" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="local">Local:</label>
+                        <input type="text" value="" name="local" id="local">
+                    </div>
+                    <div>
+                        <label for="data">Data:</label>
+                        <input type="date" value="" name="data" id="data">
+                    </div>
+                    <div>
+                        <label for="horarioInicio">Horário inicio:</label>
+                        <input type="text" value="" name="horarioInicio" id="horarioInicio">
+                    </div>
+
+                    <div>
+                        <button type="submit">Salvar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
