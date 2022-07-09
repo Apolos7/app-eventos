@@ -17,39 +17,40 @@
 
         <div class="header-menu">
             <div class="header-menu-item">
-                <a href="/">Pagina principal</a>
-            </div>
-            <div class="header-menu-item">
                 <a href="/cadastrarEvento">Cadastrar evento</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <table class="eventos-table">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Local</th>
-                        <th>Data</th>
-                        <th>Horário inicio</th>
-                    </tr>
-                </thead>
+        <section id="eventos">
+            <div class="eventos-container">
+                <div class="eventos-card">
+                    <table class="eventos-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Local</th>
+                                <th>Data</th>
+                                <th>Horário inicio</th>
+                            </tr>
+                        </thead>
 
-                <tbody>
-                    <tr th:each="evento : ${eventos}">
-                        <td th:text="${evento.nome}"></td>
-                        <td th:text="${evento.local}"></td>
-                        <td th:text="${evento.data}"></td>
-                        <td th:text="${evento.horarioInicio}"></td>
-                    </tr>
-                </tbody>
+                        <tbody>
+                            <tr th:each="evento : ${eventos}">
+                                <td th:text="${evento.nome}"></td>
+                                <td th:text="${evento.local}"></td>
+                                <td th:text="${evento.data}"></td>
+                                <td th:text="${evento.horarioInicio}"></td>
+                            </tr>
+                        </tbody>
 
-            </table>
+                    </table>
+                </div>
+            </div>
         </section>
     </main>
-    
+
 
 </body>
 

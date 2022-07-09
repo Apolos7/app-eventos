@@ -6,43 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro evento</title>
+    <link href="../static/css/StyleFormEvento.css" th:href="@{/css/StyleFormEvento.css}" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div>
             <h1>Cadastro de Eventos</h1>
         </div>
-        <div>
-            <a href="/">Pagina principal</a>
+        <div class="header-menu">
+            <div class="header-menu-item">
+                <a href="/">Pagina principal</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <div>
+        <section id="form-section">
+            <div class="form-container">
                 <form action="/cadastrarEvento" method="post">
-                    <div>
+                    <div class="form-input-container">
                         <label for="nome">Nome:</label>
                         <input type="text" value="" name="nome" id="nome">
                     </div>
-                    <div>
+                    <div class="form-input-container">
                         <label for="local">Local:</label>
                         <input type="text" value="" name="local" id="local">
                     </div>
-                    <div>
+                    <div class="form-input-container">
                         <label for="data">Data:</label>
                         <input type="date" value="" name="data" id="data">
                     </div>
-                    <div>
+                    <div class="form-input-container">
                         <label for="horarioInicio">Horário inicio:</label>
                         <input type="text" value="" name="horarioInicio" id="horarioInicio">
                     </div>
 
-                    <div>
+                    <div class="form-button">
                         <button type="submit">Salvar</button>
                     </div>
-                    
                 </form>
             </div>
         </section>

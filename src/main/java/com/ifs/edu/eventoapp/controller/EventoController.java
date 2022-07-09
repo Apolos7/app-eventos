@@ -21,7 +21,7 @@ public class EventoController {
     
     @GetMapping("/cadastrarEvento")
     public String form() {
-        return "evento/formEvento";
+        return "formEvento";
     }
 
     @PostMapping("/cadastrarEvento")
@@ -29,7 +29,7 @@ public class EventoController {
 
         eventoRepository.save(evento);
 
-        return "redirect:/cadastrarEvento";
+        return "redirect:/";
     }
 
     @GetMapping("/")

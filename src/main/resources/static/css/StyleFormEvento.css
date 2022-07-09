@@ -21,56 +21,51 @@ html {
     padding: 10px;
 }
 
-.header-menu {
-    display: flex;
-    flex-direction: row;
-}
-
 .header-menu-item a {
     padding: 10px;
     text-decoration: none;
     color: unset;
 }
 
-#eventos {
+#form-section {
     padding: 40px 10px;
 }
 
-.eventos-container {
+.form-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 300px;
     margin: 0 auto;
-}
-
-.eventos-card {
     background-color: #33334d;
+    padding: 30px;
     border-radius: 10px;
-    padding: 30px 10px;
 }
 
-.eventos-table {
+
+.form-input-container {
+    margin-top: 10px;
+}
+
+.form-input-container input {
+    max-width: 200px;
     width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-.eventos-table thead {
-    font-size: 18px;
-    color: #E9E9E9;
-    font-weight: 700;
-}
-
-.eventos-table tbody {
-    color: #CFCFCF;
-    text-align: center;
-    font-weight: 500;
-}
-
-.eventos-table tbody tr {
-    height: 50px;
-    border-top: 1px solid #5c5c8a;
-}
-
-.eventos-table tbody tr:nth-child(odd) {
+    border: 1px solid #384459;
     background-color: #29293d;
+    border-radius: 5px;
+    color: #9AAABE;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+.form-button {
+    margin-top: 10px;
+}
+
+.form-button button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #00e600;
+    background-color: rgb(0, 153, 0, 0.3);
+    color: #00e600;
+    font-size: 16px;
 }
